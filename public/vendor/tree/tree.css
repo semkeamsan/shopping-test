@@ -1,0 +1,109 @@
+.tree {
+    position: relative;
+    background: white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.tree .up-down {
+    font-family: "Font Awesome 5 Pro";
+    padding: 0px 3px;
+    cursor: pointer;
+}
+
+.tree .up-down:before {
+    content: "\f0da";
+}
+
+.tree .tree-show>.cate>.up-down {
+    transform: rotate(90deg);
+}
+
+.tree .folder {
+    color: var(--primary);
+}
+
+.tree .folder:before {
+    content: "\f07b";
+}
+
+.tree .tree-show>.cate>a .folder:before {
+    content: "\f07c";
+}
+
+.tree .active>.cate>a>.folder {
+    color: #fff;
+}
+
+.tree ul {
+    padding-left: 5px;
+    list-style: none;
+}
+
+.tree ul li {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tree ul li:before {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    margin: auto;
+    content: "";
+    background-color: var(--primary);
+}
+
+.tree ul li:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background-color: var(--primary);
+}
+
+.tree ul li:last-child:after {
+    height: 15px;
+}
+
+.tree ul a {
+    padding: 0 5px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.tree ul li.active>.cate>a {
+    color: #fff;
+    background-color: var(--primary) !important;
+}
+
+.tree ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary);
+}
+
+.tree a:hover .folder {
+    color: #fff;
+}
+
+.tree .options {
+    opacity: 0;
+}
+
+.tree .options:hover {
+    opacity: 1;
+}

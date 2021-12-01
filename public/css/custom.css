@@ -1,0 +1,23 @@
+fieldset.collapsible {
+    border: 1px solid #D5D8D8;
+}
+
+fieldset.collapsible>legend i {
+    font-size: initial;
+}
+
+fieldset.collapsible>div {
+    display: none;
+}
+
+.tooltip-inner {
+    white-space: pre-wrap;
+}
+
+.modal-open .select2-container--open {
+    z-index: 9999;
+}
+
+textarea {
+    min-height: 10rem !important;
+}
